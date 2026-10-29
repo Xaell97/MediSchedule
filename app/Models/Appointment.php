@@ -21,12 +21,12 @@ class appointments extends Model
         'canceled_at',
     ];
 
-    public function patient()
+    public function patient(): BelongsTo
     {
         return $this->belongsTo(User::class, 'patirnt_id');
     }
 
-    public function doctor()
+    public function doctor(): BelongsTo
     {
         return $this->belongsTo(Doctor::class, 'doctor_id');
     }
