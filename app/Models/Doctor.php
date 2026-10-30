@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use App\Models\Specialty;
 use App\Models\Appointment;
 
-class doctors extends Model
+class Doctor extends Model
 {
     use HasFactory;
 

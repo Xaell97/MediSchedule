@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('cpf')->unique()->after('email');
             $table->string('phone')->after('cpf');
-            $table->enum('role', ['patirnt', 'admin'])->default('patient')->after('phone');
+            $table->enum('role', ['patient', 'admin'])->default('patient')->after('phone');
             $table->string('status')->default('active')->after('role');
 
         });

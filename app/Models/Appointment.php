@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use App\Models\User;
 use App\Models\Doctor;
 
-class appointments extends Model
+class Appointment extends Model
 {
     use HasFactory;
 

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Doctors;
 
-class specialties extends Model
+class Specialty extends Model
 {
     use HasFactory;
 
